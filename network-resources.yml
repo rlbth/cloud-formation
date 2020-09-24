@@ -291,8 +291,8 @@ Resources:
                     cd /var/www/html
                     aws s3 cp s3://udacity-demo-1/udacity.zip .
                     unzip -o udacity.zip
-            ImageId: ami-031e556ebe95c007e
-            KeyName: cloud-formation
+            ImageId: ami-0e82959d4ed12de3f
+            KeyName: myUdagram
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
             SecurityGroups:
             -   Ref: WebServerSecGroup
