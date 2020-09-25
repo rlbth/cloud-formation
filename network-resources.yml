@@ -381,6 +381,6 @@ Outputs:
 
     WebAppLoadBalancerDNSName:
         Description: DNS name or Public URL of the Load Balancer
-        Value: !Join [ "", [ 'http://', !GetAtt WebAppLB.DNSName ]]
+        Value: !Join [ "", [ 'http://http://udagr-webap-13fumpa2lamdv-164562826.us-east-2.elb.amazonaws.com/', !GetAtt WebAppLB.DNSName ]]
         Export:
             Name: !Sub ${EnvironmentName}-LB-DNSName
